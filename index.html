@@ -141,6 +141,8 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
+            overflow-x: auto;
+            display: block;
         }
         
         th {
@@ -155,6 +157,11 @@
             padding: 12px;
             text-align: center;
             border-bottom: 1px solid #ddd;
+        }
+        
+        tbody {
+            display: table;
+            width: 100%;
         }
         
         tr:hover {
@@ -201,6 +208,14 @@
             
             .results-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+            
+            th, td {
+                padding: 8px;
             }
         }
     </style>
